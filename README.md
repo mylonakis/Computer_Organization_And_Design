@@ -1,2 +1,15 @@
-
+# Top Level view of the Microprocessor's datapath.
 ![datapath](https://github.com/user-attachments/assets/daf60c2d-c928-41ec-8c56-a8f603c750e3)
+
+# Testbech results verifying the correctness of the circuit.
+![testbench](https://github.com/user-attachments/assets/59711edf-67d8-4d8d-9e11-e0182d3e4e51)
+
+Commands executed for testing:
+1: addi r1, r0, 10 -- r1 = 10
+2: addi r2, r0, 20 -- r2 = 20
+3: add r3, r1, r2  -- r3 = 30
+4: sw r3, 4(r0)    -- ram[1028] = 30
+5: nand r4, r3, r1 -- r4 = fffffff5
+6: sub r5, r4, r1  -- r5 = ffffffeb
+7: sb r4, 8(r0)    -- ram[1032]= 000000f5
+
