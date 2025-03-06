@@ -12,9 +12,3 @@ Commands executed for testing: <br />
 5: nand r4, r3, r1 -- r4 = fffffff5 <br />
 6: sub r5, r4, r1  -- r5 = ffffffeb <br />
 7: sb r4, 8(r0)    -- ram[1032]= 000000f5 <br />
-
-Behavior every clock cycle:
-1. 1st command enters pipeline.                 <br />
-2. 2nd command enters pipeline, no hazards yet. <br />
-3. Double operand hazard between commands: 1-3, 2-3 of 1 and 2 clock cycle difference respectively. Resolved with forwarding. <br />
-4. 
